@@ -7,8 +7,100 @@
 	<meta name="keywords" content="" />
 	<meta name="viewport" content="width=device-width">
 	<title>須方書店</title>
-	<link rel="stylesheet" type="text/css" href="https://awakeiko.github.io/sgtbooks/reset.css">
-    <link rel="stylesheet" type="text/css" href="https://awakeiko.github.io/sgtbooks/style.css">
+	<style type="text/css">
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        font-size: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    img {
+        vertical-align: bottom;
+    }
+    
+    #pc_wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #side_contents {
+        width: 20%;
+        position: fixed;
+    }
+    
+    #side_contents .nav {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+    }
+    
+    #side_contents .nav img {
+        width: 100%;
+    }
+    
+    #side_contents .nav .nav_contact {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+    
+    #side_contents .nav .nav_contact img {
+        width: 100%;
+    }
+    
+    #main_contents {
+        width: 80%;
+        position: relative;
+        margin-left: 20%;
+    }
+    
+    #main_contents .main {
+        width: 100%;
+    }
+    
+    #main_contents .main img {
+        width: 100%;
+    }
+    
+    #sp_wrapper {
+        display: none;
+    }
+    
+    @media screen and (max-width: 768px) {
+        #pc_wrapper {
+            display: none;
+        }
+        #sp_wrapper {
+            display: block;
+            position: relative;
+            width: 100%;
+        }
+        .sp_header {
+            width: 100%;
+            height: 70px;
+            position: fixed;
+            background: #524031;
+            z-index: 2;
+        }
+        .sp_header img {
+            width: 95%;
+            margin: auto;
+        }
+        .sp_contents {
+            width: 100%;
+            position: absolute;
+            top: 70px;
+        }
+        .sp_contents img {
+            width: 100%;
+        }
+    }
+</style>
 	
 </head>
 <body>
